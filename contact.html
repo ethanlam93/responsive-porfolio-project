@@ -1,100 +1,112 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-        <title>Ethan Lam</title>
-    </head> 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css-reset.css" type="text/css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head> 
+
 
 <body>
-    <!-- Left Interactive Logo with name -->
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-light bg-light"> 
-        <!-- Logo  -->
-        <div class="d-inline-flex p-2">ETHAN LAM</div>
-        <!-- Main Navigation on right (Home, Portfolio, Contact)-->
+    <!-- Top Nav Bar  -->
+    <!-- Logo  -->
+    <div class="d-inline-flex p2">ETHAN LAM</div>
+    <!-- Main Navigation on right (Home, Portfolio, Contact)-->
+    <nav class="navbar navbar-light bg-light col-12"> 
         <nav class="nav ml-auto">
-            <a class="nav-link" href="index.html">About</a>
+            <a class="nav-link active" href="index.html">Home</a>
             <div class="vl"></div>
             <a class="nav-link" href="portfolio.html">Portfolio</a>
             <div class="vl"></div>
             <a class="nav-link" href="contact.html">Contact</a> 
         </nav>
     </nav>
+
+
     <br>
     <br>
-    <!-- Container block -->
-    <main class="container">
-        <!-- First Row ( contains all the forms)-->
-        <div class="row">
-            <form class="col-8">
-                <!-- Contact label  -->
-                <br>
-                <h3>Contact</h3>
-                <hr>
-                <!-- Where to input name  -->
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-                </div>
-                <!--Where to input email -->
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="example@gmail.com">
-                </div>
-                <!-- Where to input additional message (textarea) -->
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                </div>
-                <!-- Submit button  -->
-                <input class="btn btn-primary" type="submit" value="Submit">
-                <br>
-                <br>
-            </form>
-        </div>
-    </main>
-    <!-- WHITE SPACE  -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12" style="height:88px;"></div>
-        </div>
-    </div>
-    <!-- ( copy-right)-->
-    <footer class="row copyright navbar">
-        <div class="col-md-12">
-            <span>&#169; Copyright</span>
-            <div class="socialmedia">
-                <a href="https://www.facebook.com/littlefriedrice/" class="fa fa-facebook"></a>
-                <a href="https://www.linkedin.com/in/ethanlam93/" class="fa fa-linkedin"></a>
-                <a href="https://github.com/ethanlam93" class="fa fa-github"></a>
-                <a href="https://www.instagram.com/little_fried_rice/" class="fa fa-instagram"></a>
+
+
+        <!-- Container that wrap the entire Contact form -->
+        <main class="container">
+            <div class="row">
+                <!-- This form will span 8 columns on 980px screen  -->
+                <form class="col-8">
+                    <!-- Contact label  -->
+                    <br>
+                    <h3>Contact</h3>
+                    <hr>
+                    <!-- Where to input name  -->
+                    <div class="form-group col-12">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                    </div>
+                    <!--Where to input email -->
+                    <div class="form-group col-12">
+                        <label for="exampleFormControlInput1">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="example@gmail.com">
+                    </div>
+                    <!-- Where to input additional message (textarea) -->
+                    <div class="form-group col-12">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <!-- Submit button  -->
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <br>
+                    <br>
+                </form>
+            </div>
+        </main>
+
+
+        <!-- white spaces to fill empty spaces to push the footer down to the bottom. This is also a container that spreads 12 rows  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="height:200px;"></div>
             </div>
         </div>
-    </footer>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+
+
+        <!-- Footer bar (copy-right and social media links) -->
+        <div class="container">
+        <footer class="row copyright">
+            <div class="col-md-12">
+                <span>&#169; Copyright</span>
+                <!-- Social media buttons  -->
+                <div class="socialmedia">
+                    <a href="https://www.facebook.com/littlefriedrice/" class="fa fa-facebook"></a>
+                    <a href="https://www.linkedin.com/in/ethanlam93/" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/ethanlam93" class="fa fa-github"></a>
+                    <a href="https://www.instagram.com/little_fried_rice/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
 </body>
 
 

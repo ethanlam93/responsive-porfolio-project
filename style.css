@@ -1,232 +1,218 @@
+ /* THIS IS UNIVERSAL SETTINGS FOR ALL THREE HTML FILES  */
 
 
-
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-  
-}
-
-img[alt=my-picture] {
-    float: left;
-    border-radius: 10px;
-    margin-top: 4px;
-    margin-right:15px;
-    margin-bottom: 6px;
-    
-}
-
-img.rounded{
-    height: 100px;
-    width: 180px;
-}
-
-/* logo  */
-.d-inline-flex{
-    padding: 20px 20px 8px 20px !important;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    position:absolute;
-    left: 50px;
-    font-family: 'Bangers', cursive;
-    letter-spacing: 6px;
-    font-size: 25px;
-    
-}
-/* right nav bar  */
-.nav{
-    background-color: black;
-    color: white;
-}
-
-/* nav bar items  */
-.nav-link {
-color: white;
-}
-/* when you hover over nav bar  */
-.nav-link:hover {
-    font-size: 15px ;
-    font-weight: bolder;
-    color: khaki;
-}
-
-
-/* copyright footer  */
-.copyright{
-    text-align: center;
-}
-
-/* border for main contents  */
-section,
-form{
-    border: 1px solid rgb(194, 194, 194);
-}
-
-
-/* style to create vertical line between nav items  */
-.vl {
-    border: 1px solid khaki;
-}
-
-/* navbar background  */
-.navbar{
-background-color: khaki !important;
-padding-bottom: 13px;
-}
-
-/* header  */
-h3{
-    font-size: 25px;
-    font-weight: 400;
-}
-
-/* socila media footer  */
-.socialmedia {
-    font-size: 20px;
-    text-align: center;
-}
-/* position footer to the end of page  */
-footer {
-    position: absolute;
-    bottom: 0;
-    
-}
-
-/* make project titles stay inside the photo  */
-.carousel-caption{
-    background-color: white;
-    padding: 5px;
-    position: absolute;
-    bottom: 2px;
-    color: black;
-    border: solid black;
-    font-size: 15px;
-}
-
-/* change placehodler text size  */
-::-webkit-input-placeholder{
-    font-size: 10px;
-}
-
-/* change submit button style  */
-.btn {
-    font-size:10px;
-    background-color: black;
-}
- /* change submit button style when hover over  */
-.btn:hover{
-    background-color: khaki;
-    color: black;
-}
-
-/* 980 pixel format  */
-/* adjust the container proximity to the total width  */
-@media (max-width: 980px){
-    .container{
-        max-width:880px;
-    }
-}
-
-
-/* 768 pixel format  */
-@media (max-width: 768px) { 
-    /* making about me font larger  */
-    .col-8{
-        font-size: 16px;}
-    /* increase nav bar font and size  */
-    .nav{
-        height: 50px;
-        align-items: center;
-        font-size: larger;    
-    }
-    /* Scaling up gallergy images size for fit 768px screen for better UX  */
-    img.rounded{ 
-        height:120px;
-        width:200px;
-    }
-
-    /* adjust the vertical lines between nav bar items  */
-    .vl{
-        border: 1px solid khaki;
-        height: 50px;}
-
-    /* repositioning the logo  */
-    .d-inline-flex{
-        position: absolute;
-        left: 25px;
-        padding: 25px 25px 20px 25px !important;}
-
-    /* Shrinking the container to fill the whole screen  */
-    .col-8 {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;}
-    
-    /* adjust the container proximity to the total width  */
-        .container{
-            max-width:720px;
+        /* Setting font for the entire site to Robotto and background color */
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 10px;
+            background-color: rgb(208, 208, 208);
+            overflow-x: hidden;
         }
-    }
-    
-    /* Styling for screen size 640px; */
-    @media (max-width: 640px) { 
-    /* adjust the container proximity to the total width  */
-    .container{
-        max-width:600px;
-    }
+        /* Setting size for About Me profile picture, also making it float left to texts wrap around it */
+        img[alt=my-picture] {
+            float: left;
+            border-radius: 10px;
+            margin-top: 4px;
+            margin-right:15px;
+            margin-bottom: 6px;
+        }
+        /* adjusting header font */
+        h3{
+            font-size: 25px;
+            font-weight: 400;
+        }
+        /* setting default height and width for all images of portfolio.html page  */
+        img.rounded{
+            height: 100px;
+            width: 180px;
+        }
+        /* Ethan Lam logo  */
+        .d-inline-flex{
+            padding: 10px 20px 8px 20px !important;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            position:absolute;
+            left: 50px;
+            font-family: 'Bangers', cursive;
+            letter-spacing: 6px;
+            font-size: 25px;
+            z-index: 1;
+        }
+        /* navbar yellow background that goes behind logo and nav items  */
+        .navbar {
+            background-color: khaki !important;
+        }
+        /* right nav bar background */
+        .nav{
+            background-color: black;
+            border-radius: 10px;
+        }
+        /* nav bar links color */
+        .nav-link {
+            color: white;
+        }
+        /* when you hover over nav bar, the color changes to khaki  */
+        .nav-link:hover {
+            font-size: 15px ;
+            font-weight: bolder;
+            color: khaki;
+        }
+        /* align copyright footer to center */
+        .copyright{
+            text-align: center;
+        }
+        /* grey border and white background for main contents on each page   */
+        section,
+        form{
+            border: 1px solid rgb(194, 194, 194);
+            background-color: white;
+        }
+        /* style to create vertical line between nav items  */
+        .vl {
+            border: 1px solid khaki;
+            background-color: white;
+        }
+        /* adjusting socila media footer's font and alignment to center */
+        .socialmedia {
+            font-size: 20px;
+            text-align: center;
+        }
+        /* position footer to the end of page  */
+        footer {
+            background-color: khaki;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        /* make project's name cards stay inside the photo using Bootstrap class "carousel-caption */
+        .carousel-caption{
+            background-color: white;
+            padding: 5px;
+            position: absolute;
+            bottom: 2px;
+            color: black;
+            border: solid black;
+            font-size: 15px;
+        }
+        /* change input forms placehodler text size  */
+        :placeholder-shown{
+            font-size: 20px;
+        }
+        /* change submit button style  */
+        .btn {
+            font-size:10px;
+            background-color: black;
+        }
+        /* change submit button style when hover over  */
+        .btn:hover{
+            background-color: khaki;
+            color: black;
+        }
 
-    /* move the nav bar to the center  */
-    .nav{
-        position: relative;
-        top: 5px;
-        right:150px;
-        font-size: 25px;
-    }
+
+
+/* FROM THIS DOWN, CSS WILLS ADJUST STYLE ACCORDING TO THE SCREEN SIZE: 980PX, 768PX, AND 640PX  */
+
+
+        /* 980PX PERSONALIZED FORMAT */
         
+        /* adjust the container's response to the total width  */
+        @media (max-width: 980px){
+            .container{
+                max-width:880px;
+            }
+        }
 
-        /* adjust the vertical lines between nav bar items  */
-    .vl{
-        border: 1px solid white;
-        height: 50px;
-    }
 
-    /* adjust the position of the main content by adding some top padding  */
-    section,
-    form{
-        margin-top: 40px;
-    }
+        /* 768PX PERSONALIZED FORMAT  */
 
-    /* Adjusting logo posiiton to the center and make it pops  */
-    .d-inline-flex{
-        position: static;
-        padding: 20px 240px 20px 250px !important;
-        width: 640px;
-    }
+        @media (max-width: 768px) { 
+            /* adjust the container proximity to the total width  */
+            .container{
+                width: 700px;
+                }
+            /* making "about-me" font larger  */
+            .col-8{
+                font-size: 16px;}
+            /* increase nav bar font and size  */
+            .nav{
+                height: 50px;
+                align-items: center;
+                font-size: larger;    
+            }
+            /* Scaling up gallergy images size for fit 768px screen for better UX  */
+            img.rounded{ 
+                height:120px;
+                width:200px;
+            }
+            /* adjust the vertical lines between nav bar items  */
+            .vl{
+                border: 1px solid khaki;
+                height: 50px;
+            }
+            /* repositioning the logo  */
+            .d-inline-flex{
+                left: 35px;
+                padding: 25px 25px 20px 25px !important;
+            }
+            /* Shrinking the container to fill the whole screen  */
+            .col-8 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100% ;
+            }
+            }
+    
+        /* 640PX PERSONALIZED FORMAT */
 
-    /* positioning the yellow strip on top  */
-    .navbar{
-        position: static;
-        padding: 0rem 0rem 15px 0rem !important;
-    }
-/* Englarging social media icons  */
-.socialmedia {
-    font-size: 50px;
-}
-
-/* Shrinking the gallergy to one column on mobile screen  */
-.col-6 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;}
-
-/* Scaling up gallergy images size for fit 640px screen for better UX  */
-img.rounded{ 
-    height:400px;
-    width:460px;
-}
-
-    }   
-
+        @media (max-width: 640px) { 
+            /* adjust the container proximity to the total width  */
+            .container{
+                max-width:600px;
+            }
+            /* move the nav bar to the center  */
+            .nav{
+                position: relative;
+                top: 5px;
+                right:150px;
+                font-size: 25px;
+            }
+            /* adjust the vertical lines between nav bar items  */
+            .vl{
+                border: 1px solid white;
+                height: 50px;
+            }
+            /* adjust the position of the main content by adding some top padding  */
+            section,
+            form{
+                margin-top: 40px;
+            }
+            /* Adjusting logo posiiton to the center and make it pops  */
+            .d-inline-flex{
+                position: static;
+                padding: 20px 240px 20px 250px !important;
+                width: 640px;
+            }
+            /* positioning the yellow strip on top  */
+            .navbar{
+                position: static;
+                padding: 0rem 0rem 15px 0rem !important;
+            }
+            /* Englarging social media icons  */
+            .socialmedia {
+                font-size: 50px;
+            }
+            /* Shrinking the gallergy to one column on mobile screen  */
+            .col-6 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            /* Scaling up gallergy images size for fit 640px screen for better UX  */
+            img.rounded{ 
+                height:400px;
+                width:460px;
+            }
+            }   
 

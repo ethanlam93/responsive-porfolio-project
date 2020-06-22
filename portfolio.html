@@ -7,33 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css-reset.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <title>Ethan Lam</title>
+    <title>Portfolio</title>
 </head>
 
 
 <body>
-    <!-- Left Interactive Logo with name -->
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-light bg-light"> 
-        <!-- Logo  -->
-        <div class="d-inline-flex p-2">ETHAN LAM</div>
-        <!-- Main Navigation on right (Home, Portfolio, Contact)-->
+    <!-- Top Nav Bar  -->
+    <!-- Logo  -->
+    <div class="d-inline-flex p2">ETHAN LAM</div>
+    <!-- Main Navigation on right (Home, Portfolio, Contact)-->
+    <nav class="navbar navbar-light bg-light col-12"> 
         <nav class="nav ml-auto">
-            <a class="nav-link" href="index.html">About</a>
+            <a class="nav-link active" href="index.html">Home</a>
             <div class="vl"></div>
             <a class="nav-link" href="portfolio.html">Portfolio</a>
             <div class="vl"></div>
             <a class="nav-link" href="contact.html">Contact</a> 
         </nav>
     </nav>
+
+
     <br>
     <br>
+
+
     <!-- Portfolio Container block -->
     <div class="container">
         <!-- First Row - list of all projects -->
@@ -74,7 +78,7 @@
                     </figure>
                 </div>
                 <br>
-                <!-- Project 4 and 5  -->
+                <!-- Project 5  -->
                 <div class="row">
                     <!-- Fifth project -->
                     <figure class="col-6">
@@ -86,16 +90,21 @@
             </section>
         </div>
     </div>
-    <!-- WHITE SPACE  -->
+
+
+    <!-- white spaces to fill empty spaces to push the footer down to the bottom. This is also a container that spreads 12 rows  -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12" style="height:50px;"></div>
+            <div class="col-md-12" style="height:200px;"></div>
         </div>
     </div>
-    <!--(copyright) -->
-    <footer class="row copyright navbar">
-        <div class="col-md-12">
+
+
+    <!-- Footer bar (copy-right and social media links) -->
+    <footer class="row copyright">
+        <div class="col-12">
             <span>&#169; Copyright</span>
+            <!-- Social media buttons  -->
             <div class="socialmedia">
                 <a href="https://www.facebook.com/littlefriedrice/" class="fa fa-facebook"></a>
                 <a href="https://www.linkedin.com/in/ethanlam93/" class="fa fa-linkedin"></a>
@@ -105,12 +114,6 @@
         </div>
     </footer>
     
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
