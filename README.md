@@ -38,6 +38,7 @@ Some important details regarding the execution of my CSS files:
 * I also learned to use the pseudo element selector :placeholder-shown to style input form placeholder fonts
 * The main thing I code for the CSS file is to adjust the responsiveness of the "col-" class to react to a specific width, usually we can use col-md or col-sm or col-lg but those width are defined by Bootstrap. Because this project ask for a specific width, I had to copy bootstrap properties for each "col-" class and re-style them in CSS using !important to override Bootstrap predefined behaviors
 * GOOGLE CHROME INSPECT TOOL is GOLDEN for this project. By toggling the properties under the style tab, i know exactly where to fix my styling errors or insert a new style.
-* As i thought i completed the project, when I take full page screenshot of my html file, i run into a HUGE ISSUE: something in my body is overflown, which means the total width is higher than the screen width, after 5 hours of trying to inspect which part of my body caused the issue, i found an trick to fix it: by inserting an attribute called "overflown-x: hidden" into by body
+* As i thought i completed the project, when I take full page screenshot of my html file, i run into a HUGE ISSUE: something in my body is overflown, which means the total width is higher than the screen width, after 5 hours of trying to inspect which part of my body caused the issue, i found an trick to fix it: by inserting an attribute called "overflown-x: hidden" into my body
+* I ALSO INCLUDED A COMPLETE FOLDER OF SCREENSHOT OF EACH FILE AT GIVE WIDTH.
 
 
